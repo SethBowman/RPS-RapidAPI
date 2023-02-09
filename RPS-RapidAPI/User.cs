@@ -7,5 +7,5 @@ public class User
     public string Name { get; set; }
 
     [JsonProperty("beats")]
-    public string Beats { get; set; }
+    public string Beats { get; set; } 
 }

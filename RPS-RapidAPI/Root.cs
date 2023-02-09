@@ -20,8 +20,6 @@ public class Root
         var response = client.Execute(request);
         var root = JsonConvert.DeserializeObject<Root>(response.Content);
 
-
-
         while (answer != "rock" && answer != "paper" && answer != "scissors")
         {
             Console.WriteLine("That was not an option, try again.");
@@ -30,6 +28,7 @@ public class Root
 
         return $"Player 1: {answer}, Player 2 : {root.Ai.Name}\nResult of game: {root.Result}";
     }
+
     [JsonProperty("user")]
     public User User { get; set; }
 

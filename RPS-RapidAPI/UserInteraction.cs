@@ -40,7 +40,7 @@ namespace RPS_RapidAPI
                 }
                 if (answer == "yes")
                 {
-                    Root.Game();
+                    Game.Execute();
                     Console.ReadKey();
                     Console.Clear();
                 }

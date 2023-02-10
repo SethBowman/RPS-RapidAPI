@@ -17,8 +17,9 @@ namespace RPS_RapidAPI
         {
             while (answer != "rock" && answer != "paper" && answer != "scissors")
             {
-                PassMessage("That was not an option, try again.");
+                PassMessage("That was not an option, try again.\n(Rock, Paper, or Scissors?)");
                 answer = GetUserAction();
+                Console.Clear();
             }
             return answer;
         }

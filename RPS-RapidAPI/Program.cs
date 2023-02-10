@@ -1,2 +1,3 @@
-﻿//I want to play more than once!!
-Console.WriteLine(Root.Game());
+﻿using RPS_RapidAPI;
+
+UserInteraction.PlayGame();
